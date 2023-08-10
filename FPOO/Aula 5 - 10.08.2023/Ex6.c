@@ -7,13 +7,11 @@ int main(){
 	
 	int numero;
 	
+	do{
 	printf("Digite um número: ");
 	scanf("%d", &numero);
-	
-	while(numero!=4){
-		printf("Digite um número: ");
-		scanf("%d", &numero);
 	}
+	while(numero!=4);
 	
 	return 0;
 }

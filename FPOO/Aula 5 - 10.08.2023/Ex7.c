@@ -7,15 +7,11 @@ int main(){
 	
 	int numero;
 	
+	do{
 	printf("Digite um número: ");
 	scanf("%d", &numero);
-	printf("O quadrado de %d é %d", numero, numero*numero);
-	
-	while(numero!=4){
-		printf("\n\nDigite um número: ");
-		scanf("%d", &numero);
-		printf("O quadrado de %d é %d", numero, numero*numero);
-	}
+	printf("O quadrado de %d é %d\n\n", numero, numero*numero);
+	}while(numero!=4);
 	
 	return 0;
 }
