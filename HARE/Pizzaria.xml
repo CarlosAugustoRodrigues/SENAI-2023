@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<Pizzaria>
+	<Cardápio>
+
+		<Pizzas>	
+			<nome>Pizza de Mussarela</nome>
+				<preço>R$ 30,00</preço>
+				
+			<nome>Pizza de Espinafre</nome>
+				<preço>R$ 45,00</preço>
+				
+			<nome>Pizza de Calabresa</nome>
+				<preço>R$ 50,00</preço>
+				
+			<nome>Pizza de Portuguesa</nome>
+				<preço>R$ 60,00</preço>
+		</Pizzas>
+
+	</Cardápio>
+</Pizzaria>
