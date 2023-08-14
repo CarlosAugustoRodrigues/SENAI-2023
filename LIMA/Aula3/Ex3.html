@@ -8,51 +8,51 @@
 <body>
 
     <h2>Formulário</h2> <br/>
+    <form>
+        <fieldset style="width: 500px;">
+            <legend>Dados pessoais</legend>
 
-    <fieldset style="width: 500px;">
-        <legend>Dados pessoais</legend>
-
-        <label>Nome:</label>
-        <input type="text" style="width: 271px; margin-bottom: 5px;"> <br/>
+            <label>Nome:</label>
+            <input type="text" style="width: 271px; margin-bottom: 5px;"> <br/>
     
-        <label>Endereço:</label>
-        <input type="text" style="width: 250px; margin-bottom: 5px;"> <br/>
+            <label>Endereço:</label>
+            <input type="text" style="width: 250px; margin-bottom: 5px;"> <br/>
 
-        <label>Cidade:</label>
-        <input type="text" style="width: 265px; margin-bottom: 5px;"> <br/>
+            <label>Cidade:</label>
+            <input type="text" style="width: 265px; margin-bottom: 5px;"> <br/>
 
-        <label>Estado:</label>
-        <select>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="MG">Minas Gerais</option>
-        </select>
-    </fieldset> <br/>
+            <label>Estado:</label>
+                <select>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+        </fieldset> <br/>
 
-    <fieldset style="width: 500px;">
-        <legend>Dados profissionais</legend>
+        <fieldset style="width: 500px;">
+            <legend>Dados profissionais</legend>
 
-        <label>Natureza do Cargo</label> <br/>
-        <input type="radio" value="Gerência">Gerência
-        <input type="radio" value="Financeiro">Financeiro
-        <input type="radio" value="Recepção">Recepção
-        <input type="radio" value="Administrativo">Administrativo
-        <input type="radio" value="Juridico">Juridico <br/> <br/>
+            <label>Natureza do Cargo</label> <br/>
+            <input type="radio" value="Gerência" name="Cargo">Gerência
+            <input type="radio" value="Financeiro" name="Cargo">Financeiro
+            <input type="radio" value="Recepção" name="Cargo">Recepção
+            <input type="radio" value="Administrativo" name="Cargo">Administrativo
+            <input type="radio" value="Juridico" name="Cargo">Juridico <br/> <br/>
 
-        <label>Área de Interesse</label> <br/>
-        <input type="checkbox" value="Computação">Computação
-        <input type="checkbox" value="Biologia">Biologia
-        <input type="checkbox" value="Meio Ambiente">Meio Ambiente
-        <input type="checkbox" value="Engenharia">Engenharia
-        <input type="checkbox" value="História">História <br/> <br>
+            <label>Área de Interesse</label> <br/>
+            <input type="checkbox" value="Computação">Computação
+            <input type="checkbox" value="Biologia">Biologia
+            <input type="checkbox" value="Meio Ambiente">Meio Ambiente
+            <input type="checkbox" value="Engenharia">Engenharia
+            <input type="checkbox" value="História">História <br/> <br>
 
-        <label>Mini-currículo</label>
-        <textarea style="width: 350px; height: 100px;"></textarea> <br/> <br/>
+            <label>Mini-currículo</label>
+            <textarea style="width: 350px; height: 100px; font-family: Times New Roman;"></textarea> <br/> <br/>
 
-        <input type="submit" value="Enviar" style="margin-right: 10px;">
-        <input type="submit" value="Limpar">
+            <input type="submit" value="Enviar" style="margin-right: 10px;">
+            <input type="submit" value="Limpar">
 
-    </fieldset>
-    
+        </fieldset>
+    </form>
 </body>
 </html>

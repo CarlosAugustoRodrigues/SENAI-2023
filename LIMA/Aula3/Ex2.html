@@ -5,51 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 2</title>
 </head>
-<body>
+<body style="margin: 30px">
     
     <h4>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h4> <br/>
 
     <form>
 
-        <label>Login</label>
+        <b><label style="margin-right: 30px;">Login</label></b>
         <input type="text" style="margin-bottom: 5px;"> <br/>
 
-        <label>Senha</label>
+        <b><label style="margin-right: 27px;">Senha</label></b>
         <input type="password" style="margin-bottom: 5px;"> <br/>
 
-        <label>Status</label>
+        <b><label style="margin-right: 27px;">Status</label></b>
         <select style="width: 70px; height: 25px; margin-bottom: 10px;" name="Status">
+            <option value="Vazio"></option>
             <option value="Ativo">Ativo</option>
             <option value="Inativo">Inativo</option>
         </select> <br/>
 
-        <label>Tipo</label>
+        <b><label style="margin-right: 32px;">Tipo</label></b>
         <input type="radio" name="Tipo" value="Técnico">Técnico
         <input type="radio" name="Tipo" value="Professor">Professor
         <input type="radio" name="Tipo" value="Aluno">Aluno <br/>
 
-        <label>Data Criação</label>
+        <b><label style="margin-right: 20px;">Data Criação</label></b>
         <input type="date" style="margin-bottom: 10px; margin-top: 10px;"> <br/>
 
-        <labrel>Perfil</labrel>
+        <b><labrel style="margin-right: 27px;">Perfil</labrel></b>
         <input type="radio" name="Perfil" value="Convidado">Convidado
         <input type="radio" name="Perfil" value="Administrador">Administrador <br/><br/>
-
-        <label>Observações</label>
+    
+        <b><label style="margin-right: 20px">Observações</label></b>
         <textarea style="height: 150px; overflow-y: scroll; width: 150px;"></textarea> <br/><br/>
 
-        <label>Módulos</label>
-        <input type="checkbox" name="Módulos" value="Compras">Compras
-        <input type="checkbox" name="Módulos" value="Biblioteca">Biblioteca
-        <input type="checkbox" name="Módulos" value="Académico">Académico <br/>
-        <input type="checkbox" name="Módulos" value="Documentação" style="margin-left: 65px;">Documentação
-        <input type="checkbox" name="Módulos" value="Recursos Humanos">Recursos Humanos
-
-        <br/>
-        <br/>
-
-        <input type="submit" value="Cadastrar">
-        <input type="submit" value="Excluir">
+        <b><label style="margin-right: 5px">Módulos</label></b>
+        <input type="checkbox" name="Módulos" value="Compras" style="margin-bottom: 10px;">Compras
+        <input type="checkbox" name="Módulos" value="Biblioteca" style="margin-left: 20px;">Biblioteca
+        <input type="checkbox" name="Módulos" value="Académico" style="margin-left: 20px;">Académico <br/>
+        <input type="checkbox" name="Módulos" value="Documentação" style="margin-left: 67px;">Documentação
+        <input type="checkbox" name="Módulos" value="Recursos Humanos" style="margin-left: 20px;">Recursos Humanos<br/>
+        <input type="submit" value="Cadastrar" style="margin-top: 15px;">
+        <input type="submit" value="Excluir" style="margin-left: 10px;">
 
     </form>
 
