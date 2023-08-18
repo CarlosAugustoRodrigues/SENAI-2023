@@ -34,7 +34,6 @@ int main (){
 		
 		printf("\n\nPara encerrar digite 0, para continuar digite 1: ");
 		scanf("%d", &decisao);
-		printf("\n--------------------------------------------------");
 	}
 	
 	return 0;
