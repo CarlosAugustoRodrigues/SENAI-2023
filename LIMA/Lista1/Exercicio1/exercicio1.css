@@ -1,0 +1,15 @@
+.listah{
+    display: flex;
+    margin-top: 100px;
+}
+.listah li{
+    margin-right: 25px;
+}
+.lista{
+    display: flex;
+    margin-top: 100px;
+}
+.lista li{
+    margin-right: 25px;
+    list-style-type: none;
+}
