@@ -19,7 +19,7 @@ int main(){
 	}
 	
 	for(contador = 0; contador < 5; contador++){
-		for(i = 0; i < 5; i++){
+		for(i = 0; i < 4; i++){
 			if(n[i] > n[i+1]){
 				aux = n[i];
 				n[i] = n[i+1];

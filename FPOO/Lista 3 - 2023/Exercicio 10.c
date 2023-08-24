@@ -14,10 +14,8 @@ int main(){
 	}
 	
 	for(i = 0; i < 10; i++){
-		if(n[i] > n[i + 1]){
+		if(n[i] > maior){
 			maior = n[i];
-		}else{
-			maior = n[i + 1];
 		}
 	}
 	
