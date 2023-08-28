@@ -1,0 +1,14 @@
+body {
+  background-image: url(../Aula5/assets/img/img23.png);
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+.t1 {
+  color: blue;
+}
+#t2 {
+  color: red;
+}
