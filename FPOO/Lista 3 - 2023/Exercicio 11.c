@@ -15,7 +15,7 @@ int main(){
 	
 	printf("\nNúmeros não ordenados: ");
 	for(contador = 0; contador < 5; contador++){
-		printf("%d ", n[contador]);
+		printf("[%d ]", n[contador]);
 	}
 	
 	for(contador = 0; contador < 5; contador++){
