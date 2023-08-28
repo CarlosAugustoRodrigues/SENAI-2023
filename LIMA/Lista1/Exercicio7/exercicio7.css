@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 20vh;
+    width: 100vw;
+    background-color: brown;
+}
+main div{
+    display: flex;
+    flex-direction: row;
+}
+.rosa{
+    width: 30vw;
+    height: 60vh;
+    background-color: #BC8F8F;
+}
+.vermelho{
+    width: 70vw;
+    height: 60vh;
+    background-color: #800000;
+}
+footer{
+    height: 20vh;
+    width: 100vw;
+    background-color: brown;
+}
