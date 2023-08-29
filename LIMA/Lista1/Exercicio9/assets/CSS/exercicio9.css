@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/bg.jpeg);
+    background-size: cover;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.opshead{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 0.6);
+    height: 5vh;
+    width: 100vw;
+}
+.opshead1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.opshead1 img{
+    width: 30px;
+    filter: invert(1);
+    margin-left: 20px;
+}
+.opshead1 h3{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.opshead1 p{
+    margin-left: 15px;
+    font-size: 15px;
+}
+.opshead2{
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 95vh;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 0.6);
+    height: 7vh;
+    width: 35vw;
+    border-radius: 20px;
+    margin-top: 86vh;
+}
+.app1{
+    display: flex;
+    justify-content: center;
+}
+.app1 img{
+    width: 45px;
+    margin: 25px;
+}
