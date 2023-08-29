@@ -40,7 +40,7 @@ int main(){
 	scanf("%d", &votosN);
 	
 	for(i = 0; i < candidatos; i++){
-		soma+=votosCandi[i];
+		soma += votosCandi[i];
 	}
 	
 	int votosValidos = soma + votosB;
@@ -49,6 +49,7 @@ int main(){
 	printf("\n");
 	
 	printf("Situação da Eleição: ");
+	
 	if(votosValidos > votosN){
 		printf("Valida");
 		printf("\n");
@@ -71,19 +72,6 @@ int main(){
 		}
 	}else{
 		printf("Inválida");
-	}
-	
-	if(votosValidos > 200000){
-		printf("\n");
-		printf("Haverá 2º entre:");
-		printf("\n");
-		
-		for(i = 0; ){
-			
-		}
-	}else{
-		printf("\n");
-		printf("Não haverá 2º Turno");
 	}
 	
 	return 0;
