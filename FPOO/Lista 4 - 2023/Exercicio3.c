@@ -11,12 +11,12 @@ int main(){
 	
 	for(i = 0; i < 5; i++){
 		printf("\nNome da mercadoria: ");
-		scanf("%s", &mercadoria);
+		scanf("%s", &mercadoria[i]);
 		printf("Preço da mercadoria: ");
 		scanf("%f", &preco[i]);
 	}
 	
-	float precoReajustado;
+	float precoReajustado[5];
 	
 	for(i = 0; i < 5; i++){
 		if(preco < 1000){
@@ -24,7 +24,13 @@ int main(){
 		}else{
 			precoReajustado[i] = preco[i] * 1.07;
 		}
-	}	
+	}
+	
+	printf("Mercadoria\t\tPreço\n");
+	
+	for(i = 0; i < 5; i++){
+		printf("%s\t\t\t%.2f\n", mercadoria[i], precoReajustado[i]);
+	}
 	
 	return 0;
 }
