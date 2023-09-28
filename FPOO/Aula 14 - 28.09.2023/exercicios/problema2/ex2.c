@@ -36,13 +36,13 @@ int main() {
     int N;
     char comandos[1001];
 
-    FILE *entrada = fopen("esquerda.in.txt", "r");
+    FILE *entrada = fopen("esquerda.in", "r");
     if (entrada == NULL) {
         perror("Erro ao abrir o arquivo de entrada");
         return 1;
     }
 
-    FILE *saida = fopen("esquerda.out.txt", "w");
+    FILE *saida = fopen("esquerda.out", "w");
     if (saida == NULL) {
         perror("Erro ao abrir o arquivo de saída");
         fclose(entrada);
