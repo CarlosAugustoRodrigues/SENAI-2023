@@ -47,16 +47,16 @@
 console.log(
   "Desenvolva um programa que leia três variáveis (a, b, c) e resolva a expressão: ( a + b ) / c."
 );
-var a = 10;
-b = 10;
-c = 10;
+var a = 10,
+  b = 10,
+  c = 10;
 console.log("A expressão (a + b) / c = ", (a + b) / c);
 
 console.log(
   "\nDesenvolva um programa que leia a velocidade de um carro (km/h) e a distância a ser percorrida (km) por ele. Calcule e apresente na tela, quanto tempo (horas) será necessário para o carro percorrer a distância informada."
 );
-var kmh = 100;
-distanciaKm = 200;
+var kmh = 100,
+  distanciaKm = 200;
 console.log("O tempo é =", distanciaKm / kmh, "horas");
 
 console.log(
