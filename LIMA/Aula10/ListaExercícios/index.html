@@ -11,7 +11,7 @@
     <br />
 
     <div class="ex1">
-      <h3>Exercício 1</h3>
+      <h2>Exercício 1</h2>
       <p>
         Desenvolva um programa que leia a velocidade de um carro (km/h) e a
         distância a ser percorrida (km) por ele. Calcule e apresente na tela,
@@ -23,8 +23,29 @@
       <input type="number" id="vel" />
       <label>Distânca percorrida (km)</label>
       <input type="number" id="dis" />
+      <input class="button" type="submit" onclick="calcularTempo()" />
+      <label id="text1"></label>
+      <h3 id="resultado1"></h3>
     </div>
-    <input class="button" type="submit" />
+
+    <div class="ex2">
+      <h2>Exercício 2</h2>
+      <p>
+        Desenvolva um programa que leia o nome e o salário de uma pessoa, depois
+        leia o valor do índice percentual (%) de reajuste do salário. Calcule e
+        apresente na tela, o valor do novo salário e o nome da pessoa.
+      </p>
+
+      <label>Nome</label>
+      <input type="text" id="nome" />
+      <label>Salário</label>
+      <input type="number" id="salario" />
+      <label>% de Aumento</label>
+      <input type="number" id="aumento" />
+      <input class="button" type="submit" onclick="calcularSalario()" />
+      <label id="text2"></label>
+      <h3 id="resultado2"></h3>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>

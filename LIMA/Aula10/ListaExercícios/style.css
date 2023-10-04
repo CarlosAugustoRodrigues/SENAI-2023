@@ -18,11 +18,19 @@ body {
   align-items: center;
 }
 
+h1 {
+  margin-top: 50px;
+}
+
 .ex1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.ex1 h2 {
+  text-decoration: underline;
+  margin-top: 10px;
 }
 .ex1 p {
   margin-top: 10px;
@@ -36,7 +44,7 @@ body {
   font-weight: bold;
 }
 .ex1 input {
-  width: 10vw;
+  width: 192px;
   padding: 5px;
   margin-top: 5px;
   overflow: hidden;
@@ -44,5 +52,48 @@ body {
 .button {
   margin-top: 10px;
   padding: 5px;
-  width: 10vw;
+  width: 192px;
+}
+.ex1 h3 {
+  width: 192px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.ex2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ex2 h2 {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+.ex2 p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 40vw;
+  text-align: justify;
+}
+.ex2 label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.ex2 input {
+  width: 192px;
+  padding: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.button {
+  margin-top: 10px;
+  padding: 5px;
+  width: 192px;
+}
+.ex2 h3 {
+  width: 192px;
+  margin-top: 5px;
+  text-align: center;
 }
