@@ -155,23 +155,45 @@ var precoProduto = 1263,
   valorDesconto = calcularDesconto(precoProduto, descontoProduto);
 
 if (precoProduto > 1000) {
-  console.log(valorDesconto);
-  console.log(precoFinal(precoProduto, valorDesconto));
+  console.log("Desconto:", valorDesconto);
+  console.log("Preço com Desconto:", precoFinal(precoProduto, valorDesconto));
 }
 
 console.log(
   "\n2. Desenvolva um programa que leia o salário de um funcionário e o número de filhos. Se o salário for menor do que 2000 o funcionário receberá um salário família equivalente a 45 reais por filho. Apresente o salário final."
 );
 
-function salarioFamilia(numFilhos, valorPFilho) {
-  return numFilhos * valorPFilho;
+function salarioFamilia(numFilhos, valorFilho) {
+  return numFilhos * valorFilho;
 }
 
-var salarioFuncionario = 2100,
-  numFilhos = 3,
-  valorPFilho = 45,
-  salarioFinal = salarioFuncionario + salarioFamilia(numFilhos);
+var salario = 1650,
+  filhos = 3,
+  valorFilho = 45,
+  salFamilia = salarioFamilia(filhos, valorFilho);
 
-if (salarioFuncionario < 2000) {
-  console.log(salarioFamilia(numFilhos, valorPFilho));
+if (salario < 2000) {
+  console.log(
+    "Salário Familha:",
+    salFamilia,
+    "\nSalário Final:",
+    salario + salFamilia
+  );
+}
+
+console.log("\nLista 3");
+console.log(
+  "1. Faça um programa que mostre na tela valores no intervalo entre 10 e 200."
+);
+
+for (let i = 10; i <= 200; i++) {
+  console.log(i);
+}
+
+console.log(
+  "\n2. Faça um programa que mostre na tela valores no intervalo entre 200 e 10."
+);
+
+for (let i = 200; i >= 10; i--) {
+  console.log(i);
 }

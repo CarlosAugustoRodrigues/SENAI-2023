@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 10</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+      width: 100vw;
+      height: 30vh;
+      font-family: 'Lucida Sans';
+      overflow-x: hidden;
+    "
+  >
+    <div style="display: flex; column-gap: 10px">
+      <input
+        id="a"
+        type="text"
+        placeholder="Valor de A:"
+        style="
+          margin-bottom: 5px;
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 10px;
+        "
+      />
+      <input
+        id="b"
+        type="text"
+        placeholder="Valor de B:"
+        style="
+          margin-bottom: 5px;
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 10px;
+        "
+      />
+      <input
+        id="c"
+        type="text"
+        placeholder="Valor de C:"
+        style="
+          margin-bottom: 5px;
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 10px;
+        "
+      />
+    </div>
+    <input
+      type="submit"
+      onclick="operacao()"
+      style="
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 30px;
+        border: 1px solid red;
+        width: 10vw;
+      "
+    />
+
+    <div style="display: flex">
+      <h1 style="margin-right: 10px; color: white">Resultado:</h1>
+      <h1 id="resultado" style="color: black"></h1>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

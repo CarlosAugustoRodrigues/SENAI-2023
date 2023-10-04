@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ex1 p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 40vw;
+  text-align: justify;
+}
+.ex1 label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.ex1 input {
+  width: 10vw;
+  padding: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.button {
+  margin-top: 10px;
+  padding: 5px;
+  width: 10vw;
+}
