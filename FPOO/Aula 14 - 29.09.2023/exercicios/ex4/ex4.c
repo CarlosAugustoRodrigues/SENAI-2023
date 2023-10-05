@@ -210,6 +210,7 @@ int main(){
 		
 		else{
 			printf("\nPrograma Encerrado!\n");
+			break;
 		}
 	}
 	
