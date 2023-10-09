@@ -9,7 +9,7 @@ class Paciente {
   }
   diagnosticar() {
     if (this.imc() < 18.5) {
-      return "Abaixo do Peso";
+      return "Baixo Peso";
     } else if (this.imc() >= 18.5 && this.imc() <= 24.9) {
       return "Peso Normal";
     } else if (this.imc() >= 25 && this.imc() <= 29.9) {
@@ -23,12 +23,12 @@ class Paciente {
     }
   }
   showHTML() {
-    let mostrar = `<label>${this.nome}</label>`;
-    mostrar += `<label>Peso:</label><label>${this.peso}</label>`;
-    mostrar += `<label>Altura:</label><label>${this.altura}</label>`;
-    mostrar += `<label>IMC:</label><label>${this.imc()}</label>`;
-    mostrar += `<label>Diagnóstico:</label><label>${this.diagnosticar()}</label>`;
-    return mostrar;
+    let str = `<p class="nome">${this.nome}</p>`;
+    str += `<label class="peso">Peso:<span>${this.peso}</span></label>`;
+    str += `<label class="altura">Altura:<span>${this.altura}</span></label>`;
+    str += `<label class="imc">IMC:<span>${this.imc().toFixed(1)}</span></label>`;
+    str += `<label class="diag">Diagnóstico:<span>${this.diagnosticar()}</span></label>`;
+    return str;
   }
 }
 
@@ -46,6 +46,6 @@ console.table(listaPacientes);
 const main = document.getElementById("pacientes");
 listaPacientes.forEach((lista) => {
   const div = document.createElement("div");
-  div.innerHTML = lista.showHTML;
+  div.innerHTML = lista.showHTML();
   main.appendChild(div);
 });

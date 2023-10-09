@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <locale.h>
 
 FILE *entrada;
@@ -16,8 +17,8 @@ int main(){
 		printf("Erro, não foi possível abrir o arquivo");
 	}
 	
-	while(fgets(linha, 100, entrada) != NULL){
-		printf("%s", linha);
+	while(fgets(linha, sizeof(linha), entrada) != NULL){
+		
 	}
 	
 	fclose(entrada);
