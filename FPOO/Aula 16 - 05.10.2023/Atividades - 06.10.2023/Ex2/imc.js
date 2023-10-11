@@ -23,11 +23,14 @@ class Paciente {
     }
   }
   showHTML() {
-    let str = `<p class="nome">${this.nome}</p>`;
-    str += `<label class="peso">Peso:<span>${this.peso}</span></label>`;
-    str += `<label class="altura">Altura:<span>${this.altura}</span></label>`;
-    str += `<label class="imc">IMC:<span>${this.imc().toFixed(1)}</span></label>`;
-    str += `<label class="diag">Diagnóstico:<span>${this.diagnosticar()}</span></label>`;
+    let str = `<h2 class="nome">${this.nome}</h2>`;
+    str += `<hr>`;
+    str += `<p class="peso">Peso:<span>${this.peso}</span></p>`;
+    str += `<p class="altura">Altura:<span>${this.altura}</span></p>`;
+    str += `<p class="imc">IMC:<span>${this.imc().toFixed(1)}</span></p>`;
+    str += `<hr>`;
+    str += `<h3 class="diag">Diagnóstico:</h3>`;
+    str += `<h3>${this.diagnosticar()}</h3>`;
     return str;
   }
 }
