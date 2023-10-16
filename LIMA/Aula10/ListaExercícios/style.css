@@ -36,7 +36,8 @@ p {
   width: 40vw;
   text-align: justify;
 }
-.ex1, .ex2, .ex3, .ex4, .ex5, .ex6, .ex7, .ex8, .ex9, .ex10 {
+.ex1, .ex2, .ex3, .ex4, .ex5,
+.ex6, .ex7, .ex8, .ex9, .ex10 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,16 +49,16 @@ h2{
   text-decoration: underline;
   margin-top: 20px;
 }
-label{
+label {
   margin-top: 15px;
   font-weight: bold;
 }
-input{
+input {
   width: 192px;
   padding: 5px;
   margin-top: 5px;
   overflow: hidden;
 }
-h3{
+h3 {
   margin-top: 5px;
 }
