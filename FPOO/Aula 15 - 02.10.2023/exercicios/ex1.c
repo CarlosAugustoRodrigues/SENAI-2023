@@ -2,8 +2,9 @@
 #include <string.h>
 #include <locale.h>
 
-FILE *entrada;
+FILE *entrada, *saida;
 char arqEntrada[] = "entrada.csv";
+char arqSaida[] = "saida.csv";
 
 int main(){
 	
@@ -18,9 +19,8 @@ int main(){
 	}
 	
 	while(fgets(linha, sizeof(linha), entrada) != NULL){
-		
 	}
-	
+
 	fclose(entrada);
 	
 	return 0;

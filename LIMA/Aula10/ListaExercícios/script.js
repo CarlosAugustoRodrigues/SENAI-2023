@@ -1,15 +1,26 @@
 //Exercício 1
+function operacao() {
+  let a = Number(document.querySelector("#a").value);
+  let b = Number(document.querySelector("#b").value);
+  let c = Number(document.querySelector("#c").value);
 
-function calcularTempo() {
-  let vel = Number(document.querySelector("#velex1").value);
-  let dis = Number(document.querySelector("#disex1").value);
+  let resultado = (a + b) / c;
 
-  let tempo = dis / vel;
-
-  document.querySelector("#result1").innerHTML = `Tempo Necessário: ${tempo.toFixed(1)} hora(s)`;
+  document.getElementById("result1").innerHTML = resultado.toFixed(1);
 }
 
 //Exercício 2
+
+function calcularTempo() {
+  let vel = Number(document.querySelector("#velex2").value);
+  let dis = Number(document.querySelector("#disex2").value);
+
+  let tempo = dis / vel;
+
+  document.querySelector("#result2").innerHTML = `Tempo Necessário: ${tempo.toFixed(1)} hora(s)`;
+}
+
+//Exercício 3
 function calcularSalario(){
   let nome = document.querySelector("#nome").value;
   let salario = Number(document.querySelector("#salario").value);
@@ -18,11 +29,11 @@ function calcularSalario(){
   aumento = salario * (aumento / 100);
   salario = salario + aumento;
 
-  document.querySelector("#text2").innerHTML = `Funcionário(a): ${nome}`;
-  document.querySelector("#result2").innerHTML = `Aumento: R$${aumento.toFixed(2)} | Salário Final: R$${salario.toFixed(2)}`;
+  document.querySelector("#text3").innerHTML = `Funcionário(a): ${nome}`;
+  document.querySelector("#result3").innerHTML = `Aumento: R$${aumento.toFixed(2)} | Salário Final: R$${salario.toFixed(2)}`;
 }
 
-//Exercício 3
+//Exercício 4
 function calcularPontos(){
   let nomeTime = document.querySelector("#time").value;
   let numVitorias = Number(document.querySelector("#vit").value);
@@ -30,39 +41,39 @@ function calcularPontos(){
 
   let pontos = (numVitorias * 3) + numEmpates;
 
-  document.querySelector("#text3").innerHTML = `Time: ${nomeTime}`;
-  document.querySelector("#result3").innerHTML = `Vitórias: ${numVitorias} | Empates: ${numEmpates} | Total de Pontos: ${pontos}`;
-}
-
-//Exercício 4
-function calcularOperacao(){
-  let number = Number(document.querySelector("#num").value);
-
-  document.querySelector("#result4").innerHTML = `${number} - 1 = ${number - 1}`;
-  document.querySelector("#result4-1").innerHTML = `${number} + 1 = ${number + 1}`;
+  document.querySelector("#text4").innerHTML = `Time: ${nomeTime}`;
+  document.querySelector("#result4").innerHTML = `Vitórias: ${numVitorias} | Empates: ${numEmpates} | Total de Pontos: ${pontos}`;
 }
 
 //Exercício 5
-function calcularTempoAviao(){
-  let vel = 900;
-  let dis = Number(document.querySelector("#disex5").value);
+function calcularOperacao(){
+  let number = Number(document.querySelector("#num").value);
 
-  let tempo = dis / vel;
-
-  document.querySelector("#result5").innerHTML = `Tempo Necessário: ${tempo.toFixed(1)} hora(s)`;
+  document.querySelector("#result5").innerHTML = `${number} - 1 = ${number - 1}`;
+  document.querySelector("#result5-1").innerHTML = `${number} + 1 = ${number + 1}`;
 }
 
 //Exercício 6
+function calcularTempoAviao(){
+  let vel = 900;
+  let dis = Number(document.querySelector("#disex6").value);
+
+  let tempo = dis / vel;
+
+  document.querySelector("#result6").innerHTML = `Tempo Necessário: ${tempo.toFixed(1)} hora(s)`;
+}
+
+//Exercício 7
 function calcularViagens(){
   let qtdCaminhoes = Number(document.querySelector("#qtdCamin").value);
   let qtdAlqueires = Number(document.querySelector("#qtdAlq").value);
 
   let viagens = (qtdAlqueires * 250) / (qtdCaminhoes * 18);
   
-  document.querySelector("#result6").innerHTML = `Viagens Necessárias: ${viagens.toFixed(1)}`;
+  document.querySelector("#result7").innerHTML = `Viagens Necessárias: ${viagens.toFixed(0)}`;
 }
 
-//Exercício 7
+//Exercício 8
 function calcularRV(){
   let raio = Number(document.querySelector("#raio").value);
   let altura = Number(document.querySelector("#altura").value);
@@ -73,13 +84,13 @@ function calcularRV(){
   let areaTotal = 2 * ((raio ** 2) * pi) + 2 * (pi * raio * altura);
   let volume = pi * (raio ** 2) * altura;
 
-  document.querySelector("#result7AreaB").innerHTML = `Área da Base: ${areaB.toFixed(2)}cm²`;
-  document.querySelector("#result7AreaL").innerHTML = `Área Lateral: ${areaL.toFixed(2)}cm²`;
-  document.querySelector("#result7AreaT").innerHTML = `Área Total: ${areaTotal.toFixed(2)}cm²`;
-  document.querySelector("#result7Volume").innerHTML = `Volume: ${volume.toFixed(2)}cm³`;
+  document.querySelector("#result8AreaB").innerHTML = `Área da Base: ${areaB.toFixed(2)}cm²`;
+  document.querySelector("#result8AreaL").innerHTML = `Área Lateral: ${areaL.toFixed(2)}cm²`;
+  document.querySelector("#result8AreaT").innerHTML = `Área Total: ${areaTotal.toFixed(2)}cm²`;
+  document.querySelector("#result8Volume").innerHTML = `Volume: ${volume.toFixed(2)}cm³`;
 }
 
-//Exercício 8
+//Exercício 9
 function calcularPreco(){
   let nomeMerc = document.querySelector("#merc").value;
   let preco = Number(document.querySelector("#preco").value);
@@ -91,7 +102,7 @@ function calcularPreco(){
   document.querySelector("#novoPreco").innerHTML = `Novo Preço: R$${novoPreco.toFixed(2)}`;
 }
 
-//Exercício 9
+//Exercício 10
 function porcentagemEleicao(){
   let cidade = document.querySelector("#cidade").value;
   let eleitores = Number(document.querySelector("#eleitores").value);

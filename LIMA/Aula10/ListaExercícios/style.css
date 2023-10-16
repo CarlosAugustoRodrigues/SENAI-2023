@@ -29,39 +29,14 @@ button {
   padding: 5px;
   width: 192px;
 }
-
-/* Exercício 1 */
-.ex1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-.ex1 h2 {
-  text-decoration: underline;
-  margin-top: 10px;
-}
-.ex1 p {
+p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 20px;
   width: 40vw;
   text-align: justify;
 }
-.ex1 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex1 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-
-/* Exercício 2 */
-.ex2 {
+.ex1, .ex2, .ex3, .ex4, .ex5, .ex6, .ex7, .ex8, .ex9, .ex10 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,265 +44,20 @@ button {
   margin-top: 30px;
   width: 100vw;
 }
-.ex2 h2 {
+h2{
   text-decoration: underline;
   margin-top: 20px;
 }
-.ex2 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex2 label {
+label{
   margin-top: 15px;
   font-weight: bold;
 }
-.ex2 input {
+input{
   width: 192px;
   padding: 5px;
   margin-top: 5px;
   overflow: hidden;
 }
-.ex2 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 3 */
-.ex3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex3 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex3 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex3 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex3 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex3 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 4 */
-.ex4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex4 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex4 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex4 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex4 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex4 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 5 */
-.ex5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex5 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex5 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex5 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex5 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex5 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 6 */
-.ex6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex6 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex6 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex6 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex6 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex6 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 7 */
-.ex7 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex7 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex7 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex7 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex7 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex7 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 8 */
-.ex8 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex8 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex8 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex8 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex8 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex8 h3 {
-  margin-top: 5px;
-}
-
-/* Exercício 9 */
-.ex9 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width: 100vw;
-}
-.ex9 h2 {
-  text-decoration: underline;
-  margin-top: 20px;
-}
-.ex9 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex9 label {
-  margin-top: 15px;
-  font-weight: bold;
-}
-.ex9 input {
-  width: 192px;
-  padding: 5px;
-  margin-top: 5px;
-  overflow: hidden;
-}
-.ex9 h3 {
+h3{
   margin-top: 5px;
 }
