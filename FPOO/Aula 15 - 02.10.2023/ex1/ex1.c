@@ -1,27 +1,34 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <locale.h>
 
-FILE *entrada;
-char arqEntrada[] = "entrada.csv";
+#define MAX_COLS 100
+#define MAX_ROWS 1000
 
-int main(){
-	
-	setlocale(LC_ALL, "");
-	
-	char linha[100];
-	
-	entrada = fopen(arqEntrada, "r");
-	
-	if(entrada == NULL){
-		printf("Erro, não foi possível abrir o arquivo");
-	}
-	
-	while(fgets(linha, sizeof(linha), entrada) != NULL){
-		
-	}
-	
-	fclose(entrada);
-	
-	return 0;
+int main() {
+    FILE *arquivo;
+    char linha[MAX_COLS * 20];
+
+    arquivo = fopen("entrada.csv", "r");
+
+    if (arquivo == NULL) {
+        perror("Erro ao abrir o arquivo");
+        return 1;
+    }
+
+    while (fgets(linha, sizeof(linha), arquivo)) {
+        char *token;
+        token = strtok(linha, ";");
+
+        while (token != NULL) {
+            printf("%s ", token);
+            token = strtok(NULL, ";");
+        }
+
+        printf("\n");
+    }
+
+    fclose(arquivo);
+
+    return 0;
 }
