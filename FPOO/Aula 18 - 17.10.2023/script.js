@@ -48,7 +48,7 @@ class Descontos {
   }
 }
 
-function funcionario(){
+function funcionario() {
   let nome = document.querySelector("#inputNome").value;
   let salario = Number(document.querySelector("#inputSalario").value);
 
@@ -61,9 +61,8 @@ function funcionario(){
     div.classList.add("card");
     div.innerHTML = folhas.showHTML();
     main.appendChild(div);
-  })
+  });
 
-  document.querySelector("#inputNome").value = '';
-  document.querySelector("#inputSalario").value = '';
+  document.querySelector("#inputNome").value = "";
+  document.querySelector("#inputSalario").value = "";
 }
-

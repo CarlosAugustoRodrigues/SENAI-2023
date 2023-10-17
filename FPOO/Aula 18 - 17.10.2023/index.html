@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aula 18</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  
-  <header>
-    Cálculo Pagamento
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 18</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Cálculo Pagamento</h2>
 
-  <main id="pgto">
+      <div class="input">
+        <input type="text" id="inputNome" placeholder="Nome do Colaborador" />
+        <input type="number" id="inputSalario" placeholder="Salário" />
+        <button onclick="funcionario()">Enviar</button>
+      </div>
+    </header>
 
-    <div class="input">
-      <input type="text" id="inputNome" placeholder="Nome do Colaborador">
-      <input type="number" id="inputSalario" placeholder="Salário">
-      <button onclick="funcionario()">Enviar</button>
-    </div>
-
-  </main>
-
-</body>
-<script src="./script.js"></script>
+    <main id="pgto"></main>
+  </body>
+  <script src="./script.js"></script>
 </html>
