@@ -13,43 +13,19 @@ input::-webkit-inner-spin-button {
 
 body {
   width: 100vw;
-<<<<<<< HEAD
-  height: 400vh;
-=======
-  height: 430vh;
->>>>>>> 03e4df6977070228bc7da10af56e3d8960ed0964
+  height: 450vh;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
 }
+
 h1 {
   margin-top: 50px;
 }
-button {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-  width: 192px;
-}
-p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  width: 40vw;
-  text-align: justify;
-}
-.ex1,
-.ex2,
-.ex3,
-.ex4,
-.ex5,
-.ex6,
-.ex7,
-.ex8,
-.ex9,
-.ex10 {
+
+div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,20 +33,38 @@ p {
   margin-top: 30px;
   width: 100vw;
 }
+
 h2 {
   text-decoration: underline;
   margin-top: 20px;
 }
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 40vw;
+  text-align: justify;
+}
+
 label {
   margin-top: 15px;
   font-weight: bold;
 }
+
 input {
   width: 192px;
   padding: 5px;
   margin-top: 5px;
-  overflow: hidden;
 }
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 192px;
+}
+
 h3 {
   margin-top: 5px;
 }
