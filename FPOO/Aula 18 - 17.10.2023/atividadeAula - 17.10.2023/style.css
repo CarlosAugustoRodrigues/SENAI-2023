@@ -47,7 +47,7 @@ input {
   width: 15vw;
   padding: 15px;
   margin-right: 15px;
-  border: 1px;
+  border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   background-color: whitesmoke;
@@ -104,8 +104,8 @@ hr {
 .flexDiv {
   display: flex;
   justify-content: space-between;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 35px;
+  margin-left: 35px;
 }
 .flexDiv p {
   color: var(--color5);
