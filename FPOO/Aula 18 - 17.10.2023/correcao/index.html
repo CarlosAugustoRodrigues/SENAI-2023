@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Correção</title>
+  </head>
+  <body>
     <form id="formPessoa">
-        <input type="text" id="nome" name="nome" placeholder="Digite um nome:">
-        <input type="number" id="salario" name="salario" placeholder="Digite um salario:">
-        <input type="submit" value="Enviar" onclick="">
+      <input
+        class="inputI"
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Funcionário"
+      />
+      <input
+        class="inputI"
+        type="number"
+        id="salario"
+        name="salario"
+        placeholder="Salário"
+      />
+      <input class="enviar" type="submit" value="Enviar" onclick="" />
     </form>
 
     <div class="cards">
-        <div class="card model">
-            <h1 id="nomeValor">Nome</h1>
-            <h4 id="salarioValor">1000</h4>
-            <h4 id="salarioBase">1000</h4>
-            <h4 id="salarioLiquido">1000</h4>
-            <button onclick="remover(this)">X</button>
-        </div>
+      <div class="card model">
+        <h1 class="nomeValor">Nome</h1>
+        <hr />
+        <h4 class="salarioValor"></h4>
+        <h4 class="salarioBase">1000</h4>
+        <h4 class="salarioLiquido">1000</h4>
+        <button class="remove" onclick="remover(this)">X</button>
+        <button class="edit" onclick="editar()">Editar</button>
+      </div>
     </div>
-    
-</body>
-<script src="./script2.js"></script>
-<script src="./viewController.js"></script>
+  </body>
+  <script src="./script2.js"></script>
+  <script src="./viewController.js"></script>
 </html>
