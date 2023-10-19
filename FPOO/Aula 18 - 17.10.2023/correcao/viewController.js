@@ -30,9 +30,7 @@ function criarCard() {
   });
 }
 
-function remover(posicao) {
-  posicao.parentNode.remove();
-  pessoas.splice(posicao, 1);
+function remover(botaoExcluir) {
+  botaoExcluir.parentNode.remove();
+  pessoas.splice(botaoExcluir, 1);
 }
-
-function editar() {}
