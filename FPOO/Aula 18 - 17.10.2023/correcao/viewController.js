@@ -16,21 +16,23 @@ function criarCard() {
   pessoas.forEach((pessoa) => {
     let cardNew = card.cloneNode(true);
     cardNew.classList.remove("model");
-    cardNew.querySelector("#nomeValor").innerHTML = `Nome: ${pessoa.nome}`;
+    cardNew.querySelector(".nomeValor").innerHTML = `${pessoa.nome}`;
     cardNew.querySelector(
-      "#salarioValor"
+      ".salarioValor"
     ).innerHTML = `Salário: R$ ${pessoa.salario}`;
     cardNew.querySelector(
-      "#salarioBase"
+      ".salarioBase"
     ).innerHTML = `Salário Base: R$ ${pessoa.salarioBase}`;
     cardNew.querySelector(
-      "#salarioLiquido"
+      ".salarioLiquido"
     ).innerHTML = `Salário Líquido: R$ ${pessoa.salarioLiquido}`;
     cards.appendChild(cardNew);
   });
 }
 
-function remover(e) {
-  e.parentNode.remove();
-  pessoas.splice(e, 1);
+function remover(posicao) {
+  posicao.parentNode.remove();
+  pessoas.splice(posicao, 1);
 }
+
+function editar() {}
