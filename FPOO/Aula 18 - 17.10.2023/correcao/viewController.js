@@ -26,11 +26,14 @@ function criarCard() {
     cardNew.querySelector(
       ".salarioLiquido"
     ).innerHTML = `Salário Líquido: R$ ${pessoa.salarioLiquido}`;
+    cardNew.querySelector(".id").innerHTML = `${pessoas.indexOf(pessoa)}`;
     cards.appendChild(cardNew);
   });
 }
 
-function remover(botaoExcluir) {
-  botaoExcluir.parentNode.remove();
-  pessoas.splice(botaoExcluir, 1);
+function remover(e) {
+  // e.parentNode.remove();
+  // pessoas.splice(e.parentNode.querySelector(".id").innerHTML.slice(1), 1);
+  // console.log(pessoas);
+  console.log(e.parentNode.querySelector(".id").innerHTML.slice(1));
 }
