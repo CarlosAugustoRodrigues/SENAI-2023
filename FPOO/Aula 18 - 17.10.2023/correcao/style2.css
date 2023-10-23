@@ -80,19 +80,6 @@ form {
   column-gap: 10px;
 }
 
-.remove {
-  border: none;
-  border-radius: 10px;
-  background: rgb(235, 140, 140);
-  padding: 10px;
-}
-.edit {
-  border: none;
-  border-radius: 10px;
-  background: rgb(125, 160, 240);
-  padding: 10px;
-}
-
 .card h1 {
   text-align: center;
 }

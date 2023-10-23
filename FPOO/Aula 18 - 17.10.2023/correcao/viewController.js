@@ -31,9 +31,12 @@ function criarCard() {
   });
 }
 
-function remover(e) {
-  // e.parentNode.remove();
-  // pessoas.splice(e.parentNode.querySelector(".id").innerHTML.slice(1), 1);
-  // console.log(pessoas);
-  console.log(e.parentNode.querySelector(".id").innerHTML.slice(1));
+function remover(botaoExlcuir) {
+  botaoExlcuir.parentNode.remove();
+  pessoas.splice(botaoExlcuir.parentNode.querySelector(".id").innerHTML.slice(0), 1);
+  console.log(pessoas);
+}
+
+function editar(botaoEditar){
+  
 }
