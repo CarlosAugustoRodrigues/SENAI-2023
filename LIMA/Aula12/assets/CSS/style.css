@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 98vw;
+  height: 10vh;
+  border-bottom: 1px solid gray;
+}
+header img {
+  width: 80px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+}
+.info p span {
+  margin-inline: 15px;
+}
+.item-1,
+.item-2,
+.item-3 {
+  font-size: 18px;
+}
+.item-1 span {
+  color: red;
+}
+.item-2 span {
+  color: green;
+}
+.item-3 span {
+  color: blueviolet;
+}
+.buscar {
+  background-color: gray;
+  border: black solid 1px;
+  border-radius: 100px;
+  width: 15vw;
+}
+.buscar img {
+  width: 30px;
+  transform: translateY(3.5px);
+}
+input {
+  border-radius: 100px;
+  float: left;
+  background-color: transparent;
+  padding: 10px;
+  font-style: italic;
+  font-size: 16px;
+  border: none;
+  width: 12vw;
+  margin-right: 12px;
+}
+input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80vw;
+  height: 90vh;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top: 50px;
+  width: 40vw;
+  text-align: justify;
+}
+
+.news-1,
+.news-2,
+.news-3 {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.news-1 div h2,
+.news-2 div h2,
+.news-3 div h2 {
+  margin-bottom: 25px;
+}
+
+.news-1 img,
+.news-2 img,
+.news-3 img {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.temas {
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 50px;
+  width: 15vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.temas div {
+  background-color: white;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.temas div h3 {
+  border-bottom: 1px solid black;
+}
+
+.tema-1 p,
+.tema-2 p,
+.tema-3 p,
+.tema-4 p,
+.tema-5 p {
+  width: 10vw;
+  border-bottom: 1px solid black;
+}
