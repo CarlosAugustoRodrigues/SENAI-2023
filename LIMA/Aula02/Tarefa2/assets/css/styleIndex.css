@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #e2e2e2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+h3{
+    color: #101a35;
+    font-size: 20px;
+}
+h2{
+    color: #76777c;
+    font-size: 23px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+}
+
+.header{
+    width: 40vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header a img{
+    width: 100px;
+}
+.header a{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #101a35;
+}
+
+main{
+    width: 70vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.receitas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 30vh;
+}
+
+.bolo, .pudim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+
+
+.bolo a, .pudim a{
+    color: #101a35;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.bolo img, .pudim img{
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+}
+
+textarea{
+    padding: 10px;
+    width: 25vw;
+    height: 20vh;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    border: none;
+    background-color: #e1fdff;
+    font-size: 14px;
+    text-align: center;
+}
+
+button{
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    background-color: #e1fdff;
+}
+
+.suareceita, .formReceita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
