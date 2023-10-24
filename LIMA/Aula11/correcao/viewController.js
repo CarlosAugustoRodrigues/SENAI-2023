@@ -31,25 +31,11 @@ function criarCard() {
   });
 }
 
-<<<<<<< HEAD:FPOO/Aula 18 - 17.10.2023/correcao/viewController.js
 function remover(botaoExlcuir) {
   botaoExlcuir.parentNode.remove();
-  pessoas.splice(botaoExlcuir.parentNode.querySelector(".id").innerHTML.slice(0), 1);
-  console.log(pessoas);
-}
-
-function editar(botaoEditar){
-  
-}
-=======
-function remover(botaoExcluir) {
-  botaoExcluir.parentNode.remove();
   pessoas.splice(
-    botaoExcluir.parentNode.querySelector(".id").innerHTML.slice(0),
+    botaoExlcuir.parentNode.querySelector(".id").innerHTML.slice(0),
     1
   );
   console.log(pessoas);
 }
-
-function editar(botaoEditar) {}
->>>>>>> cb3e42cdfdc3a256bc09cac8383290248e61b5c8:LIMA/Aula11/correcao/viewController.js
