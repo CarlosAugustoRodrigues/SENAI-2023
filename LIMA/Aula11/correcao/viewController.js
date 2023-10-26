@@ -37,5 +37,4 @@ function remover(botaoExlcuir) {
     botaoExlcuir.parentNode.querySelector(".id").innerHTML.slice(0),
     1
   );
-  console.log(pessoas);
 }
