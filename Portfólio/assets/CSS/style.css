@@ -38,9 +38,10 @@ header{
 }
 
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 2.6vw;
+    height: 5vh;
     background-color: black;
+    border-radius: 5px;
 }
 
 .nav{
@@ -55,12 +56,15 @@ header{
 .nav p{
     font-size: 1.05rem;
     color: white;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .nav p:hover{
     color: rgb(255, 250, 0);
-    transform: scale(1.08);
+    transform: scale(1.05);
     transition: .5s;
+    border: #2BC1C8 solid 1px;
 }
 
 main{
@@ -102,7 +106,7 @@ main{
 .foto_redes{
     display: flex;
     flex-direction: column;
-    row-gap: 4%;
+    row-gap: 10px;
     justify-content: center;
     align-items: center;
     width: 250px;
@@ -115,8 +119,8 @@ main{
     background-color: black;
     border: 2px solid #2BC1C8;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 10.4vw;
+    height: 20vh;
 }
 
 .redes{
@@ -132,6 +136,6 @@ main{
     width: 30px;
 }
 .redes a:hover{
-    transform: scale(1.08);
+    transform: scale(1.05);
     transition: .5s;
 }
