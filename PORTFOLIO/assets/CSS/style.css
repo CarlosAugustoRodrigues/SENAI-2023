@@ -1,127 +1,138 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Share+Tech+Mono&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Audiowide", sans-serif;
+  font-family: 'Share Tech Mono', monospace;
 }
-
 a {
   text-decoration: none;
 }
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(to right, #5d1776, #0a5c6f);
   background-attachment: fixed;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a5c6f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 250, 0);
+  border-radius: 5px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 250, 0) #0a5c6f;
 }
 
 header {
   width: 70%;
-  height: 10%;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  column-gap: 7%;
+  column-gap: 5%;
 }
 
-.logo img {
-  width: 75px;
+.logotipo img {
+  width: 80px;
 }
 
-.nav {
+.menus {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
-  height: 10%;
+  width: 35%;
+  height: 50%;
   column-gap: 5%;
 }
-.nav p {
-  font-size: 1.05rem;
+.menus p {
+  font-size: 1.2rem;
   color: white;
   padding: 5px;
   border-radius: 10px;
 }
 
-.nav p:hover {
+.menus p:hover {
   color: rgb(255, 250, 0);
-  transform: scale(1.05);
+  transform: scale(1.08);
   transition: 0.5s;
   border: #2bc1c8 solid 1px;
 }
 
 .home {
   width: 70%;
-  height: 100%;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.apresentacao {
+.divText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 10%;
   width: 50%;
-  height: 30%;
+  height: 40%;
   text-align: justify;
   margin-top: 10%;
   transform: translateY(0px);
   animation: float 5s ease-in-out infinite;
 }
 
-.name {
+.text1 {
   color: white;
   font-size: 3.5rem;
 }
-
-.name span {
+.text1 span {
   color: #2bc1c8;
 }
 
-.front {
+.text2 {
   color: white;
-  font-size: 2.5rem;
-  border-right: 4px solid white;
-  width: 12.9ch;
+  border-right: 3px solid white;
+  font-size: 2.3rem;
+  width: 27ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1s steps(25), blinking 0.5s infinite step-end;
+  animation: typing 2S steps(27), blinking 0.5s ease-in-out infinite;
 }
-
-.front span {
+.text2 span {
   color: rgb(255, 250, 0);
 }
 
-.foto_redes {
+.foto_Redes {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   margin-top: 10%;
 }
-
 .foto {
   background-color: black;
-  border: 2px solid #2bc1c8;
   border-radius: 10px;
-  width: 250px;
-  height: 250px;
+  box-shadow: 1px 1px 5px rgb(250, 0, 255); 
+  width: 300px;
+  height: 300px;
 }
-
 .redes {
   display: flex;
   flex-direction: row;
@@ -130,13 +141,66 @@ header {
   width: 200px;
   column-gap: 5%;
 }
-
 .redes a img {
   width: 30px;
 }
 .redes a:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   transition: 0.5s;
+}
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+  height: 50vh;
+  padding-top: 10vh;
+  row-gap: 50px;
+}
+.sectionAbout,
+.sectionSkills,
+.sectionProjects {
+  font-size: 3rem;
+  color: rgb(255, 250, 0);
+  font-weight: bold;
+  text-shadow: 2px 2px 3px black;
+}
+
+.sectionAbout span,
+.sectionSkills span,
+.sectionProjects span {
+  color: #2bc1c8;
+}
+.aboutMe{
+  text-align: justify;
+  width: 100%;
+  height: 20%;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 35px;
+}
+
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10vh;
+  width: 70%;
+  height: 100vh;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10vh;
+  width: 70%;
+  height: 100vh;
 }
 
 @keyframes float {
@@ -156,8 +220,9 @@ header {
     width: 0;
   }
 }
-@keyframes blinking {
-  50% {
+
+@keyframes blinking{
+  0%{
     border-color: transparent;
   }
 }
