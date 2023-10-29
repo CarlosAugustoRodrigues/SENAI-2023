@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: 'Share Tech Mono', monospace;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 20vh;
+}
 a {
   text-decoration: none;
 }
@@ -44,6 +48,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   column-gap: 5%;
+  position: fixed;
 }
 
 .logotipo img {
@@ -80,6 +85,8 @@ header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .divText {
@@ -149,15 +156,15 @@ header {
   transition: 0.5s;
 }
 
-
-.about{
+.about, .skills, .projects{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 70%;
+}
+.about{
   height: 50vh;
-  padding-top: 10vh;
   row-gap: 50px;
 }
 .sectionAbout,
@@ -166,7 +173,7 @@ header {
   font-size: 3rem;
   color: rgb(255, 250, 0);
   font-weight: bold;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .sectionAbout span,
@@ -183,23 +190,11 @@ header {
   line-height: 35px;
 }
 
-
 .skills{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 10vh;
-  width: 70%;
   height: 100vh;
 }
 
 .projects{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 10vh;
-  width: 70%;
   height: 100vh;
 }
 
