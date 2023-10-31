@@ -9,14 +9,14 @@
   <body>
     <header>
       <div class="logotipo">
-        <img src="./assets/img/logo1.png" alt="Logotipo" />
+        <img src="./assets/img/logo.png" alt="Logotipo" />
       </div>
 
-      <nav class="menus">
-        <a href="#home"><p>HOME</p></a>
-        <a href="#about"><p>ABOUT</p></a>
-        <a href="#skills"><p>SKILLS</p></a>
-        <a href="#projects"><p>PROJECTS</p></a>
+      <nav id="menu" class="menu">
+        <a class="item-menu active" href="#home"><p>HOME</p></a>
+        <a class="item-menu" href="#about"><p>ABOUT</p></a>
+        <!-- <a href="#skills"><p>SKILLS</p></a> -->
+        <a class="item-menu" href="#projects"><p>PROJECTS</p></a>
       </nav>
     </header>
 
@@ -30,10 +30,14 @@
         <div class="foto"></div>
 
         <div class="redes">
-          <a class="github" href="https://github.com/carlosaugustorodrigues">
+          <a
+            class="github"
+            target="_blank"
+            href="https://github.com/carlosaugustorodrigues"
+          >
             <img src="./assets/img/github.png" alt="GitHub"
           /></a>
-          <a class="linkedin" href="">
+          <a class="linkedin" target="_blank" href="">
             <img src="./assets/img/Linkedin.png" alt="LinkedIn"
           /></a>
           <!-- <a class="instagram" href="">
@@ -57,13 +61,13 @@
       </div>
     </section>
 
-    <section class="skills" id="skills">
+    <!-- <section class="skills" id="skills">
       <div class="sectionSkills">
         <p>MY <span>SKILLS</span></p>
       </div>
 
       <div class="mySkills"></div>
-    </section>
+    </section> -->
 
     <section class="projects" id="projects">
       <div class="sectionProjects">
@@ -75,4 +79,5 @@
 
     <footer></footer>
   </body>
+  <script src="./assets/script/script.js"></script>
 </html>

@@ -60,22 +60,22 @@ header {
   width: 65px;
 }
 
-.menus {
+.menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 25%;
+  width: 20%;
   height: 50%;
   column-gap: 5%;
 }
-.menus p {
+.item-menu {
   font-size: 1.2rem;
   color: white;
   padding: 5px;
 }
 
-.menus p:hover {
+.item-menu:hover {
   color: rgb(255, 250, 0);
   transform: scale(1.1);
   transition: 0.5s;
@@ -165,7 +165,7 @@ header {
 }
 
 .about,
-.skills,
+/* .skills, */
 .projects {
   display: flex;
   flex-direction: column;
@@ -178,7 +178,7 @@ header {
   row-gap: 50px;
 }
 .sectionAbout,
-.sectionSkills,
+/* .sectionSkills, */
 .sectionProjects {
   font-size: 3rem;
   color: rgb(255, 250, 0);
@@ -187,7 +187,7 @@ header {
 }
 
 .sectionAbout span,
-.sectionSkills span,
+/* .sectionSkills span, */
 .sectionProjects span {
   color: #2bc1c8;
 }
@@ -200,9 +200,9 @@ header {
   line-height: 35px;
 }
 
-.skills {
+/* .skills {
   height: 100vh;
-}
+} */
 
 .projects {
   height: 100vh;
