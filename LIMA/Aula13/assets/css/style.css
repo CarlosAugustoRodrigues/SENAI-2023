@@ -22,12 +22,12 @@ header {
 
 main {
   width: 100vw;
-  height: 82vh;
+  height: 85vh;
   background-color: lightgreen;
 }
 
 footer {
   width: 100vw;
-  height: 8vh;
+  height: 5vh;
   background-color: lightcoral;
 }
