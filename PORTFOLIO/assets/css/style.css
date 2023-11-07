@@ -75,12 +75,16 @@ header {
   padding: 5px;
 }
 
-.active, .item-menu:hover {
+.item-menu:hover {
   color: rgb(255, 250, 0);
   transform: scale(1.1);
   transition: 0.5s;
   border-top: #2bc1c8 solid 1px;
   border-bottom: #2bc1c8 solid 1px;
+}
+.active {
+  color: rgb(255, 250, 0);
+  transform: scale(1.1);
 }
 
 .home {
