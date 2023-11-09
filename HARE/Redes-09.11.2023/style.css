@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: linear-gradient(45deg, gray 70%, lightgray 30%);
+  background-attachment: fixed;
+  font-family: monospace;
+}
+
+p {
+  font-size: 1.1rem;
+}
+span {
+  font-size: 1.1rem;
+  text-decoration:underline;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
