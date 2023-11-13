@@ -11,7 +11,7 @@ h1{
     background-color: white;
 }
 .fundo{
-    background-image: url(/assets2/img/ceu.jpg);
+    background-image: url(./assets2/img/ceu.jpg);
     width: 310px;
     height: 130px;
     text-align: center;
