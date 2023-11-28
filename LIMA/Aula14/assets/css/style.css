@@ -1,10 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: 'VT323', monospace;
+}
+
+:root {
+  --color1: rgb(20, 20, 20);
+  --color2: rgb(30, 30, 30);
+  --color3: rgb(255, 255, 255);
+  --color4: rgb(100, 0, 255);
+  --color5: rgb(255, 50, 150);
+  --color6: rgb(0, 0, 0);
+  --color7: rgb(0, 255, 100);
+  --color8: rgb(255, 200, 0);
 }
 
 a {
@@ -12,7 +23,7 @@ a {
 }
 
 body {
-  background: rgb(20, 20, 20);
+  background: var(--color1);
   width: 100vw;
   height: auto;
   display: flex;
@@ -22,7 +33,7 @@ body {
 }
 
 header {
-  background: rgb(30, 30, 30);
+  background: var(--color2);
   width: 100%;
   height: 10vh;
   display: flex;
@@ -31,22 +42,34 @@ header {
   justify-content: center;
 }
 header h1 {
-  color: rgb(255, 255, 255);
+  color: var(--color3);
   letter-spacing: 3px;
-  transition: 0.5s;
-}
-
-header h1:hover {
-  transform: scale(1.05);
+  transition: 0.3s;
+  font-size: 45px;
+  user-select: none;
 }
 
 header h1 span {
-  color: rgb(100, 0, 255);
+  color: var(--color4);
 }
 
 main {
   width: 70%;
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+}
+
+main h1 {
+  color: var(--color5);
+  font-size: 100px;
+  letter-spacing: 10px;
+}
+
+main > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,21 +79,21 @@ main {
 main a div {
   width: 250px;
   height: 250px;
-  background: rgb(0, 0, 0);
+  background: var(--color6);
   border-radius: 5px;
-  box-shadow: 0 10px 15px rgb(0, 0, 0);
+  box-shadow: 5px 5px 10px var(--color6);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-  color: rgb(0, 255, 100);
-  font-size: 50px;
+  color: var(--color7);
+  font-size: 100px;
   font-weight: bold;
 }
 
 main a div:hover {
-  transform: scale(1.05);
-  color: rgb(255, 100, 0);
+  transform: scale(1.15);
+  color: var(--color8);
 }
 
 main a div:active {
