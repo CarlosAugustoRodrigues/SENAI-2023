@@ -1,113 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 * {
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
 }
 
 :root {
-    --color1: rgb(20, 20, 20);
-    --color2: rgb(30, 30, 30);
-    --color3: rgb(255, 255, 255);
-    --color4: rgb(100, 0, 255);
-    --color5: rgb(255, 50, 150);
-    --color6: rgb(0, 0, 0);
-    --color7: rgb(0, 255, 100);
-    --color8: rgb(255, 200, 0);
-    --color9: rgb(255, 50, 0);
+  --color1: rgb(20, 20, 20);
+  --color2: rgb(30, 30, 30);
+  --color3: rgb(255, 255, 255);
+  --color4: rgb(100, 0, 255);
+  --color5: rgb(255, 50, 150);
+  --color6: rgb(0, 0, 0);
+  --color7: rgb(0, 255, 100);
+  --color8: rgb(255, 200, 0);
+  --color9: rgb(255, 50, 0);
+  --color10: rgb(0, 200, 200);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background: var(--color1);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background: var(--color1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
-    width: 100%;
-    height: 10vh;
-    background: var(--color2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 100px;
-    letter-spacing: 3px;
-    padding-inline: 300px;
+  width: 100%;
+  height: 10vh;
+  background: var(--color2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+  letter-spacing: 3px;
+  padding-inline: 300px;
 }
-header > span {
-    font-size: 50px;
-    color: var(--color8);
+header span {
+  font-size: 3.1rem;
+  color: var(--color8);
 }
 header div {
-    display: flex;
-    column-gap: 50px;
-    font-size: 30px;
+  display: flex;
+  column-gap: 50px;
+  font-size: 1.8rem;
 }
 header div a {
-    color: var(--color3);
-    transition: .5s;
+  color: var(--color3);
+  transition: 0.5s;
 }
 header div a:hover {
-    transform: scale(1.2);
-    color: var(--color7);
+  transform: scale(1.2);
+  color: var(--color7);
 }
-
 
 main {
-    width: 70%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 50px;
-    row-gap: 100px;
+  width: 70%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  row-gap: 100px;
 }
-main h1 {
-    color: var(--color5);
-    font-size: 70px;
-    letter-spacing: 3px;
+main > h1 {
+  color: var(--color5);
+  font-size: 4.3rem;
+  letter-spacing: 3px;
 }
-main div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 30px;
+.divBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
 }
-main div button {
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    background: var(--color6);
-    box-shadow: 5px 5px 10px var(--color6);
-    color: var(--color7);
-    font-size: 50px;
-    transition: .3s;
-    cursor: pointer;
+.button {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  background: var(--color6);
+  box-shadow: 5px 5px 10px var(--color6);
+  color: var(--color7);
+  font-size: 3.1rem;
+  transition: 0.3s;
+  cursor: pointer;
 }
-main div button:hover {
-    color: var(--color8);
-    transform: scale(1.15);
+.button:hover {
+  color: var(--color8);
+  transform: scale(1.15);
 }
-main div button:active {
-    transform: scale(.95);
+.button:active {
+  transform: scale(0.95);
 }
 .excluir {
-    color: var(--color8);
-    width: 80px;
-    height: 80px;
-    font-size: 70px;
+  color: var(--color8);
+  width: 80px;
+  height: 80px;
+  font-size: 4.3rem;
 }
 .excluir:hover {
-    color: var(--color9);
+  color: var(--color9);
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  color: var(--color3);
+}
+
+#result > h2 {
+  font-size: 2rem;
+  color: var(--color10);
+}
+
+.resultEx {
+  display: flex;
+  gap: 5px;
+}
+
+.resultEx span {
+  font-size: 1.5rem;
+}
+
+input {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 2px solid var(--color8);
+  background: var(--color2);
+  color: var(--color5);
+}
+
+.btnIn25 {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  background: var(--color7);
+  border: 2px solid var(--color5);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btnIn25:hover {
+  transform: scale(1.1);
+  background: var(--color8);
+}
+
+.btnIn25:active {
+  transform: scale(0.95);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
