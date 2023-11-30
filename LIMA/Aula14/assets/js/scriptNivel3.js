@@ -1,3 +1,4 @@
+//EXERCICIO 21
 function ex21() {
   let result = document.getElementById("result");
   result.innerHTML = `<h2>CONTANDO DE 1 ATÉ 10</h2>`;
@@ -12,6 +13,7 @@ function ex21() {
   resultEx.innerHTML += `<span> 🏁</span>`;
 }
 
+//EXERCICIO 22
 function ex22() {
   let result = document.getElementById("result");
   result.innerHTML = `<h2>CONTANDO DE 1 ATÉ 10 (MARCANDO OS PARES)</h2>`;
@@ -30,6 +32,7 @@ function ex22() {
   resultEx.innerHTML += `<span> 🏁</span>`;
 }
 
+//EXERCICIO23
 function ex23() {
   let result = document.getElementById("result");
   result.innerHTML = `<h2>CONTANDO DE 1 ATÉ 10 (MOSTRANDO APENAS OS PARES)</h2>`;
@@ -45,6 +48,7 @@ function ex23() {
   resultEx.innerHTML += `<span> 🏁</span>`;
 }
 
+//EXERCICIO 24
 function ex24() {
   let result = document.getElementById("result");
   result.innerHTML = `<h2>CONTAGEM REGRESSIVA DE 10 ATÉ 1</h2>`;
@@ -59,6 +63,7 @@ function ex24() {
   resultEx.innerHTML += `<span> 🏁</span>`;
 }
 
+//EXERCICIO 25
 function ex25() {
   let result = document.getElementById("result");
   result.innerHTML = `<h2>PEGANDO DADOS DO FORMULÁRIO</h2>`;
@@ -69,8 +74,8 @@ function ex25() {
 
   let buttonIn = document.createElement("button");
   buttonIn.innerHTML = "ENVIAR";
-  buttonIn.classList.add("btnIn25");
-  buttonIn.addEventListener("click", btn); // Use addEventListener para associar o evento click
+  buttonIn.classList.add("btn");
+  buttonIn.addEventListener("click", btn);
   result.appendChild(buttonIn);
 
   let resultEx = document.createElement("div");
@@ -78,7 +83,7 @@ function ex25() {
   result.appendChild(resultEx);
 
   function btn() {
-    resultEx.innerHTML = ""; // Limpa o conteúdo anterior
+    resultEx.innerHTML = "";
 
     let valueIn = parseInt(document.querySelector("input").value, 10);
 
@@ -88,7 +93,54 @@ function ex25() {
       }
       resultEx.innerHTML += `<span> 🏁</span>`;
     } else {
-      resultEx.innerHTML += `<span>NENHUM VALOR VÁLIDO DIGITADO</span>`;
+      resultEx.innerHTML += `<span>NENHUM VALOR DIGITADO</span>`;
     }
+  }
+}
+
+//EXERCICIO 26
+function ex26() {
+  let result = document.getElementById("result");
+  result.innerHTML = `<h2>PEGANDO DADOS DO FORMULÁRIO (CONTAGEM MAIS "INTELIGENTE)"</h2>`;
+
+  let input = document.createElement("input");
+  input.id = "input1";
+  input.setAttribute("type", "number");
+  result.appendChild(input);
+
+  let input2 = document.createElement("input");
+  input2.id = "input2";
+  input2.setAttribute("type", "number");
+  result.appendChild(input2);
+
+  let buttonIn = document.createElement("button");
+  buttonIn.innerHTML = "ENVIAR";
+  buttonIn.classList.add("btn");
+  buttonIn.addEventListener("click", btn);
+  result.appendChild(buttonIn);
+
+  let resultEx = document.createElement("div");
+  resultEx.classList.add("resultEx");
+  result.appendChild(resultEx);
+
+  function btn() {
+    resultEx.innerHTML = "";
+
+    let valueStart = parseInt(document.getElementById("input1").value, 10);
+    let valueEnd = parseInt(document.getElementById("input2").value, 10);
+
+    if (valueStart > valueEnd) {
+      console.log("a");
+      for (let i = valueStart; i <= valueEnd; i++) {
+        resultEx.innerHTML += `<span>${i} 👉</span>`;
+      }
+    } else if (valueStart < valueEnd) {
+      for (let i = valueStart; i >= valueEnd; i--) {
+        resultEx.innerHTML += `<span>${i} 👉</span>`;
+      }
+    } else {
+      resultEx.innerHTML += `<span>NENHUM VALOR DIGITADO</span>`;
+    }
+    resultEx.innerHTML += `<span> 🏁</span>`;
   }
 }
