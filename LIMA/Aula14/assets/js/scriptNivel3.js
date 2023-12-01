@@ -85,10 +85,10 @@ function ex25() {
   function btn() {
     resultEx.innerHTML = "";
 
-    let valueIn = parseInt(document.querySelector("input").value, 10);
+    let valueIn = Number(document.querySelector("input").value);
 
     if (!isNaN(valueIn) && valueIn > 0) {
-      for (let i = 1; i <= valueIn; i++) {
+      for (let i = 0; i <= valueIn; i++) {
         resultEx.innerHTML += `<span>${i} 👉</span>`;
       }
       resultEx.innerHTML += `<span> 🏁</span>`;
@@ -116,7 +116,7 @@ function ex26() {
   let buttonIn = document.createElement("button");
   buttonIn.innerHTML = "ENVIAR";
   buttonIn.classList.add("btn");
-  buttonIn.addEventListener("click", btn);
+  buttonIn.addEventListener("click", btn)
   result.appendChild(buttonIn);
 
   let resultEx = document.createElement("div");
@@ -124,23 +124,13 @@ function ex26() {
   result.appendChild(resultEx);
 
   function btn() {
-    resultEx.innerHTML = "";
-
-    let valueStart = parseInt(document.getElementById("input1").value, 10);
-    let valueEnd = parseInt(document.getElementById("input2").value, 10);
+    let valueStart = Number(document.getElementById("input1").value);
+    let valueEnd = Number(document.getElementById("input2").value);
 
     if (valueStart > valueEnd) {
-      console.log("a");
-      for (let i = valueStart; i <= valueEnd; i++) {
-        resultEx.innerHTML += `<span>${i} 👉</span>`;
-      }
+      resultEx.innerHTML += "<span>FUNCIONOU 1</span>";
     } else if (valueStart < valueEnd) {
-      for (let i = valueStart; i >= valueEnd; i--) {
-        resultEx.innerHTML += `<span>${i} 👉</span>`;
-      }
-    } else {
-      resultEx.innerHTML += `<span>NENHUM VALOR DIGITADO</span>`;
+        resultEx.innerHTML = "<span>FUNCIONOU 2</span>";
     }
-    resultEx.innerHTML += `<span> 🏁</span>`;
   }
 }
