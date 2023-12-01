@@ -116,7 +116,7 @@ function ex26() {
   let buttonIn = document.createElement("button");
   buttonIn.innerHTML = "ENVIAR";
   buttonIn.classList.add("btn");
-  buttonIn.addEventListener("click", btn)
+  buttonIn.addEventListener("click", btn);
   result.appendChild(buttonIn);
 
   let resultEx = document.createElement("div");
@@ -130,7 +130,26 @@ function ex26() {
     if (valueStart > valueEnd) {
       resultEx.innerHTML += "<span>FUNCIONOU 1</span>";
     } else if (valueStart < valueEnd) {
-        resultEx.innerHTML = "<span>FUNCIONOU 2</span>";
+      resultEx.innerHTML += "<span>FUNCIONOU 2</span>";
     }
   }
+}
+
+function ex27() {
+  let result = document.getElementById("result");
+  result.innerHTML = `<h2>TABUADA"</h2>`;
+
+  let input = document.createElement("input");
+  input.setAttribute("type", "number");
+  result.appendChild(input);
+
+  let buttonIn = document.createElement("button");
+  buttonIn.innerHTML = "ENVIAR";
+  buttonIn.classList.add("btn");
+  buttonIn.addEventListener("click", btn);
+  result.appendChild(buttonIn);
+
+  let resultEx = document.createElement("div");
+  resultEx.classList.add("resultEx");
+  result.appendChild(resultEx);
 }
