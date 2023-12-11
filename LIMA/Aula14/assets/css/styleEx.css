@@ -184,6 +184,26 @@ input {
   transform: scale(0.95);
 }
 
+.divButton > button {
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  background: var(--color7);
+  border: 2px solid var(--color5);
+  font-size: 1.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.divButton > button:hover {
+  transform: scale(1.1);
+  background: var(--color8);
+}
+
+.divButton > button:active {
+  transform: scale(0.95);
+}
+
 .ex27 {
   display: flex;
   flex-direction: column;
