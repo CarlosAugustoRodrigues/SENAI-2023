@@ -15,11 +15,11 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background: rgb(50, 50, 50);
+  background: linear-gradient(45deg, rgb(5, 10, 15) 50%, rgb(10,20,30) 50%);
 }
 
 main {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -27,17 +27,20 @@ main {
 }
 
 .container-calc {
-  width: 20vw;
-  height: 60vh;
+  width: 350px;
+  height: 550px;
   background: rgb(30, 30, 30);
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calc {
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,27 +49,28 @@ main {
 }
 
 .display {
-  width: 100%;
+  width: 280px;
   height: 8vh;
-  background: lightseagreen;
+  background: rgb(100, 200, 100);
   border-radius: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
-  font-size: 2rem;
+  padding: 15px;
+  font-size: 2.5rem;
 }
 
 .keys {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   gap: 10px;
 }
 
 .keys button {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
   border: none;
   background: rgb(40, 40, 40);
@@ -83,4 +87,39 @@ main {
 
 .keys button:active {
   transform: scale(0.95);
+}
+
+.keys .delete {
+  background: rgb(150, 0, 0);
+}
+
+.keys .delete-all {
+  background: rgb(220, 100, 0);
+}
+
+.keys .equal {
+  background: rgb(0, 0, 150);
+}
+
+.keys .zero {
+  width: 130px;
+}
+
+a {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+a:hover {
+  transform: scale(1.05);
+}
+a:active {
+  transform: scale(.95);
+}
+img {
+  width: 50px;
+  height: 50px;
 }
